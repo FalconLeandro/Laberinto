@@ -1,0 +1,117 @@
+.carousel-inner{
+    height: 100vh;
+    .carousel-item{
+        height: inherit;
+        .shadow-layer{
+            z-index: 0;
+        }
+      img{
+            height: 45%;
+            margin: auto;
+
+        }
+        .w-100{
+            width: auto!important;
+            
+        }
+        .carousel-caption{
+
+            height: 30%;
+            width: 85vw;
+            left: 2%;
+            bottom: 25%;
+            position: absolute;
+            padding: 0% 15%;
+            text-align: inherit;
+            background-image: linear-gradient(7deg, var(--background-color), var(--background-color), transparent, transparent);
+        
+            h5{
+                font-weight: 600;
+                font-size: 6rem;
+                margin-bottom: 0;
+            }
+            p{
+                font-size: 1.2rem;
+                width: 50%;
+            }
+            @media screen and (min-width: 772px) and (max-width: 1024px) { //tablet
+                padding: 1rem 7rem;
+                h5{
+                    font-size: 1.5rem;
+                }
+                p{
+                    font-size: 0.9rem;
+                }
+            }
+            
+            @media screen and (max-width: 772px) { //mobile 
+                    width: 100%;
+                    padding: unset;
+                    left: 0;
+                    bottom: 54%;
+                    height: 14%;
+                h5{
+                    font-size: 2.5rem;
+                }
+                p{
+                    font-size: 1rem;
+                    width: unset;
+                    padding: unset;
+                }
+            }
+        }
+    }
+}
+.carousel-control-prev, .carousel-control-next{
+    opacity: inherit;
+    width: 8%;
+    .carousel-control-prev-icon,.carousel-control-next-icon{
+        border:transparent solid 3px;
+        font-size: 2rem;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        transition: all .3s ease-in;
+        &:hover{
+            border:white solid 2px;
+        
+        }
+    }
+}
+.agenda{
+    padding-top: 15vh;
+}
+
+
+// .gallery{
+//     background-color: $color-secundario;
+//     height: 100vh;
+//     width: 100vw;
+//     display: flex;
+//     overflow: auto;
+//     // scroll-snap-type: x mandatory;
+//     // scroll-snap-align: center;
+//     div{
+//         flex-shrink: 0;
+//         object-fit: cover;
+//         position: sticky;
+//         top: 0px;
+//         // height: 100%;
+//         // width: 100%;
+//         img{
+//             height: 82%;
+//             width: 72%;
+//             display: flex;
+//             align-items: center;
+//         }
+//         .descripcion{
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//             justify-content: flex-end;
+//             background-color: $color-secundario;
+//             color: $color-primario
+//         }
+//     }
+
+// }
