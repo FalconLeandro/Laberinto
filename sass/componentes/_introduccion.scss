@@ -28,12 +28,12 @@
 //     }
 // }
 .btn-intro{
-  color: var(--highlight-color1);
+  color: var(--highlight-color3);
   background-color: transparent;
   
   // color: white;
   // background-color: transparent;
-  border: 2px solid var(--highlight-color1);
+  border: 2px solid var(--highlight-color3);
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
@@ -49,7 +49,7 @@
 .btn-intro:hover {
   // background-color: white;
   // color: #480F19;
-  background-color: var(--highlight-color1);
+  background-color: var(--highlight-color3);
   color: var(--background-color);
   font-weight: 600;
 }

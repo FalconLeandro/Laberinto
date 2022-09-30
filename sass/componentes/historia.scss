@@ -544,7 +544,6 @@ section:not(:first-child), footer {
 .life_title{
   grid-column:2;
   grid-row:1/2;
-  align-self:end;
   position:sticky;
   top:150px;
   z-index:5;
@@ -579,6 +578,7 @@ section:not(:first-child), footer {
   grid-column:2;
   align-self:end;
   padding-left:100px;
+  margin-top: 5rem;
 }
 
 
@@ -586,13 +586,14 @@ section:not(:first-child), footer {
   font-size: 90px;
   opacity: .5;
   margin-bottom: -30px;
-  margin-left: -50px;
+  margin-left: -15px;
   color: rgba(255,255,255,.15);
 }
 
 .tile_desc{
   max-width: 50ch;
   margin-left: 15px;
+  color: rgba(255, 255, 255, 0.15);
 }
 .title9{
   

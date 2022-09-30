@@ -12,83 +12,88 @@
 
 
 body {
-    --highlight-color3:#f12e08;
-    --highlight-color2:#F1A208;
-    --highlight-color1:#08f1a2;
-    --text-color:white;
-    --background-color:#1e1f26;
-    --stripe-pattern:repeating-linear-gradient(
-        45deg,
-        var(--highlight-color) 0px,
-        var(--highlight-color) 40px,
-        var(--background-color) 40px,
-        var(--background-color) 80px
-    );
-    
-    display:flex;
-    flex-direction:column;
+    --highlight-color4: #a03b43;
+    --highlight-color3: #f12e08;
+    --highlight-color2: #F1A208;
+    --highlight-color1: #08f1a2;
+    --text-color: white;
+    --background-color: #1e1f26;
+    --stripe-pattern: repeating-linear-gradient(45deg,
+            var(--highlight-color) 0px,
+            var(--highlight-color) 40px,
+            var(--background-color) 40px,
+            var(--background-color) 80px);
+
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    background:var(--background-color);
+    background: var(--background-color);
     margin: auto;
     overflow-x: hidden;
     font-size: 21px;
     line-height: 1.5;
-    color:var(--text-color);
-    letter-spacing:1px;
-  }
-  h1, h2, h3,h5 {
-    font-weight:800;
-    line-height:1;
-    margin-bottom:1em;
-    color:var(--highlight-color1);
-    font-family: 'Poiret One', cursive;
-    text-transform:uppercase;
-    letter-spacing:2px
+    color: var(--text-color);
+    letter-spacing: 1px;
 }
-  
-  main,footer {
-    max-width:1400px;
-    min-height:100vh;
+
+h1,
+h2,
+h3,
+h5 {
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 1em;
+    color: var(--highlight-color3);
+    font-family: 'Poiret One', cursive;
+    text-transform: uppercase;
+    letter-spacing: 2px
+}
+
+main,
+footer {
+    max-width: 1400px;
+    min-height: 100vh;
     margin: auto;
-    
+
+
     @media (max-width: 992px) {
-        max-width:100vw;
-        min-height:unset;
+        max-width: 100vw;
+        min-height: unset;
     }
-  }
-  
-  
-  section:not(:first-child) {
+}
+
+
+section:not(:first-child) {
     content-visability: auto;
     contain-intrinsic-size: 1000px;
-  }
-  
-  
-  
-  
-  .sr-only{
-    position:absolute;
-    width:1px;
-    height:1px;
-    left:-1000px;
-    opacity:.01;
-  }
-  
-  
-  
-  .text-align_right{
-    text-align:right;
-  }
-  
-  .display_block{
-    display:block;
-    margin-bottom:15px;
-  }
-  
-  .highlight_color{
-    color:var(--highlight-color);
-  }
-  
+}
+
+
+
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: -1000px;
+    opacity: .01;
+}
+
+
+
+.text-align_right {
+    text-align: right;
+}
+
+.display_block {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.highlight_color {
+    color: var(--highlight-color);
+}
+
 
 // $colors: #360745, #D61C59, #E7D84B, #EFEAC5, #1B8798;
 
@@ -148,16 +153,17 @@ body {
     z-index: 100;
     height: 70px;
     transition: .7s ease-out;
-    
-    &.scroll-down  {
+
+    &.scroll-down {
         transform: translate3d(0, -100%, 0)
     }
+
     &.scroll-up {
-      transform: none;
-      height: 90px;
-      background: rgba(13, 2, 4, 0.8);
+        transform: none;
+        height: 90px;
+        background: rgba(13, 2, 4, 0.8);
     }
-       
+
 
     .social {
         left: 3%;
@@ -168,7 +174,8 @@ body {
             color: #D0CCB3;
             margin: 0% 5px;
         }
-        img{
+
+        img {
             height: 1.5rem;
             margin-top: -6%;
         }
@@ -195,10 +202,11 @@ body {
                 color: var(--text-color);
                 letter-spacing: 1px;
                 transition: all .2s ease-out;
-                &:hover{
+
+                &:hover {
                     color: var(--highlight-color2);
                 }
-                
+
             }
 
         }
@@ -211,7 +219,7 @@ body {
     label {
         display: inline;
 
-        .btn{
+        .btn {
             display: none; //no quiero q sea vea el boton desktop
             position: absolute; // le doy absolute para q no rompa en resp
             width: 56px;
@@ -264,10 +272,10 @@ body {
     width: 100%;
     // // background-image: linear-gradient(0deg, #0D0204,transparent, #0D0204);
     // background-image: linear-gradient(17deg,#0D0204, #0D0204, transparent, transparent, #0D0204);
-    background-image: linear-gradient(10deg,var(--background-color),var(--background-color), transparent, transparent, var(--background-color));
+    background-image: linear-gradient(10deg, var(--background-color), var(--background-color), transparent, transparent, var(--background-color));
 
     z-index: 96;
-}  
+}
 
 header {
 
@@ -347,6 +355,16 @@ header {
 
 }
 
+@media only screen and (min-width: 1030px) and (max-width: 1366px) {
+
+    main,
+    footer {
+        max-width: 75%;
+        min-height: 100vh;
+        margin: auto;
+    }
+
+}
 
 @keyframes scaling {
     0% {
@@ -417,14 +435,16 @@ header {
             z-index: 99;
 
         }
-        
+
     }
 
-    
+
 }
-.colapse{
+
+.colapse {
     left: 0;
 }
-.scroll-none{
+
+.scroll-none {
     overflow-y: hidden;
 }
