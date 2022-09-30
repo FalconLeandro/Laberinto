@@ -43,7 +43,7 @@ h5 {
     font-weight: 800;
     line-height: 1;
     margin-bottom: 1em;
-    color: var(--highlight-color3);
+    color: var(--highlight-color2);
     font-family: 'Poiret One', cursive;
     text-transform: uppercase;
     letter-spacing: 2px
@@ -153,7 +153,7 @@ section:not(:first-child) {
     z-index: 100;
     height: 70px;
     transition: .7s ease-out;
-
+    background-image: linear-gradient(10deg, var(--background-color), var(--background-color), transparent, transparent, var(--background-color));
     &.scroll-down {
         transform: translate3d(0, -100%, 0)
     }
@@ -199,7 +199,7 @@ section:not(:first-child) {
                 font-family: 'Poiret One', cursive;
                 font-weight: bolder;
                 text-decoration: none;
-                color: var(--text-color);
+                color: var(--highlight-color1);
                 letter-spacing: 1px;
                 transition: all .2s ease-out;
 
