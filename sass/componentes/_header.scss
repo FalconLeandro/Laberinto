@@ -95,54 +95,6 @@ section:not(:first-child) {
 }
 
 
-// $colors: #360745, #D61C59, #E7D84B, #EFEAC5, #1B8798;
-
-// BODY {
-//   background: hsl(200,70,11);
-//   background-size: .12em 100%;
-//   font: 16em/1 Arial;
-// }
-
-// .text--line {
-//   font-size: .4em;
-//   }
-
-// svg {
-//     background: rgba(0,0,0,.4);
-//   background-size: .12em 100%;
-//   font: 16em/1 Arial;
-//   position: absolute;
-//   width: 100%;
-//   height: 100%;
-//   z-index: 98;
-//   }
-
-// $max: 5;
-// $stroke-step: 7%; 
-// .text-copy {
-//   fill: none;
-//   stroke: white;
-//   stroke-dasharray: $stroke-step $stroke-step * ($max - 1);
-//   stroke-width: 3px;
-
-//   animation: stroke-offset 8s linear, appear 8s cubic-bezier(.5, .74, .14, .99) forwards ;
-
-//   @for $item from 1 through $max {
-//     $stroke-color: nth($colors, $item);
-
-//     &:nth-child(#{$item}) {
-//       stroke: $stroke-color;
-//       stroke-dashoffset: $stroke-step * $item;
-//       }
-//     }
-//   }
-
-// @keyframes stroke-offset {
-//   50% {
-//     stroke-dashoffset: $stroke-step * $max;  
-//     stroke-dasharray: 0 $stroke-step * $max*2.5;
-//   }
-// }
 
 .menu-nav {
     display: flex;
@@ -153,7 +105,7 @@ section:not(:first-child) {
     z-index: 100;
     height: 70px;
     transition: .7s ease-out;
-    background-image: linear-gradient(10deg, var(--background-color), var(--background-color), transparent, transparent, var(--background-color));
+    background-image: linear-gradient(180deg, var(--background-color), var(--background-color), transparent);
     &.scroll-down {
         transform: translate3d(0, -100%, 0)
     }
@@ -197,9 +149,8 @@ section:not(:first-child) {
                 // font-family: 'Libre Baskerville', serif;
                 // font-family: "Source Sans Pro", sans-serif;
                 font-family: 'Poiret One', cursive;
-                font-weight: bolder;
                 text-decoration: none;
-                color: var(--highlight-color1);
+                color: var(--text-color);
                 letter-spacing: 1px;
                 transition: all .2s ease-out;
 
@@ -222,8 +173,8 @@ section:not(:first-child) {
         .btn {
             display: none; //no quiero q sea vea el boton desktop
             position: absolute; // le doy absolute para q no rompa en resp
-            width: 56px;
-            height: 43px;
+            width: 55px;
+            height: 55px;
             right: 2.5rem;
             top: 1.5rem;
             cursor: pointer;
@@ -333,7 +284,7 @@ header {
 
         .scaling {
             // display: none;
-            background-image: url('../media/Aereas\ 4.jpg');
+            background-image: url('../media/Aereas4.jpg');
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -389,7 +340,7 @@ header {
 @media all and (max-width: 980px) {
 
     nav {
-
+        
 
         ul {
             display: flex;
@@ -419,11 +370,10 @@ header {
                     }
                 }
             }
+            
         }
-
-        // #menu-burguer:checked ~ body{
-        //     overflow: hidden; // le saco el scroll a toda la pagina
-        // }
+        
+        
         #menu-burguer:checked~label .btn span {
             background: #D3E4CD;
         }
@@ -437,14 +387,17 @@ header {
         }
 
     }
-
+    .scroll-none {
+    
+        overflow-y: hidden;
+        nav ul{
+            left: 0%;
+        }
+        
+        
+    }
 
 }
 
-.colapse {
-    left: 0;
-}
 
-.scroll-none {
-    overflow-y: hidden;
-}
+

@@ -28,12 +28,12 @@
 //     }
 // }
 .btn-intro{
-  color: var(--highlight-color1);
+  color: var(--highlight-color2);
   background-color: transparent;
   
   // color: white;
   // background-color: transparent;
-  border: 2px solid var(--highlight-color1);
+  border: 2px solid var(--highlight-color2);
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
@@ -49,7 +49,7 @@
 .btn-intro:hover {
   // background-color: white;
   // color: #480F19;
-  background-color: var(--highlight-color1);
+  background-color: var(--highlight-color2);
   color: var(--background-color);
   font-weight: 600;
 }
@@ -169,7 +169,7 @@
     }
     .about_img-div{
       grid-row:1;
-      max-width:330px;
+      // max-width:330px;
     }
     .about_title {
       transform: translate(45%, 13%);
@@ -204,7 +204,7 @@
   
   @media (max-width:500px){
     .about_title{
-      transform: translate(5%, -23%);
+      transform: translate(3%, -23%);
       width: min-content;
     }
   }

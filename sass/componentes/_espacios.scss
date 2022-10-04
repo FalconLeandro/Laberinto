@@ -26,6 +26,9 @@
                 height: 60vh;
                 object-fit: cover;
                 // box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.4);
+                @media screen and (max-width: 992px) {
+                    height: 40vh;
+                }
             }
             h2, h3{
                 transform: translate(-50%, -50%);
@@ -52,7 +55,7 @@
             
             #fontTitulo{
                 font-weight: 600;
-                font-size: xxx-large;
+                font-size: 3rem;
             }
             @media screen and (max-width: 992px) {
                 align-items: center;
