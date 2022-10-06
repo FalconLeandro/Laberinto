@@ -1028,7 +1028,7 @@ footer .contact-right .form .btn-contact:hover {
 }
 
 #preloader {
-  background: black url("../../media/giflaberinto.gif") no-repeat center center;
+  background: black url("../media/giflaberinto.gif") no-repeat center center;
   background-size: 50%;
   height: 100vh;
   width: 100%;
