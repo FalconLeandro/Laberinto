@@ -80,7 +80,11 @@
   .hero_desc{
     grid-column:2/3;
     grid-row:2/3;
-    margin-left:-50px
+    margin-left:-50px;
+    
+  }
+  .quote{
+    font-style:italic;
   }
   
   .hero_img-div{
@@ -172,7 +176,7 @@
       // max-width:330px;
     }
     .about_title {
-      transform: translate(45%, 13%);
+      transform: translate(3%, -23%);
     }
     .about_desc {
       padding-left: 0;

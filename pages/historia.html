@@ -16,6 +16,7 @@
     <title>Historia</title>
 </head>
 <body>
+  <div id="preloader"></div>
     <!--Inicio pop-up-->
 	<a href="https://wa.me/5492604638780?text=Hola,%20queria%20hacer%20una%20consulta"><img src="../media/wap.png" class="wap" alt="whatsapp"></a>
 	<!--Fin pop-up-->
@@ -27,7 +28,7 @@
 		</div>
 		<ul class="menu">
 			<li><a class="menu-a"  href="../index.html">HOME</a> </li>
-			<li><a class="menu-a"  href="./pages/historia.html">HISTORIA</a></li>
+			<li><a class="menu-a"  href="#hero">HISTORIA</a></li>
 			<li><a class="menu-a"  href="#simbologia">SIMBOLOGÍA</a></li>
 			<li><a class="menu-a"  href="#contact">CONTACTO</a></li>
 		</ul>
@@ -68,7 +69,7 @@
         <h1 id="title" class="title hero_title">La historia del laberinto</h1>
         <p id="hero_desc" class="hero_desc">"Quiero laureles verdes, reales, vivos, no esos de oro o metal" (Roma, 1984)</p>
         <figure id="img-div" class="hero_img-div">
-          <img id="image" class="image mirror" src="../media/historia/historia.jpg" alt="" width="866.66" height="527.27"/>
+          <img id="image" class="image mirror" src="../media/historia/laberinto-historia-construccion.jpg" alt="" width="866.66" height="527.27"/>
           <figcaption id="img-caption" class="img-caption text-align_right">Vista aerea del Laberinto
           </figcaption>
          </figure>
@@ -174,27 +175,29 @@
         <div id="tile9" class="tile_div">
             <p class="tile_desc">Borges y los espejos</p>
             <img src="../media/historia/Borges y los espejos.jpg" alt="">
-          </div>
-          <div id="tile10" class="tile_div">
-            <p class="tile_desc">Infinito</p>
-            <img src="../media/historia/Infinito.jpg" alt="">
-          </div>
-          </div>
+        </div>
+        <div id="tile10" class="tile_div">
+          <p class="tile_desc">Infinito</p>
+          <img src="../media/historia/Infinito.jpg" alt="">
+        </div>
         
       </section>
+
       <div>
         <blockquote cite="http://news.rediff.com/report/2009/sep/14/pm-pays-tribute-to-father-of-green-revolution-borlaug.htm" class="tile_quote">"Una obra comienza a latir, deja el papel y se hace realidad.
           Vive, respira." 
         </blockquote>
       </div>
     </main>
-    <footer>
+    <footer id="contact">
       <div class="contenedor-footer-info">
         <div class="col-lg-6 col-md-12 col-sm-12 contact-left">
+          
           <div class="ubicacion">
             <h5>Cómo llegar</h5>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.838042246037!2d-68.240760216129!3d-34.65879289628309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9679a962df774b81%3A0xed3f3c33e9cd786d!2sLaberinto%20de%20Borges!5e0!3m2!1ses!2sar!4v1664254374438!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
+          <hr>
           <div class="row info">
               
             <ul>
@@ -218,7 +221,7 @@
               </li>
             </ul>
           </div>
-          <img class="logo-footer" src="../media/logo3.png" alt="logo">	
+          <hr>  
             <!-- <div class="row redes">
               <a href="https://www.instagram.com/laberintodeborgesok/?hl=es"><i class="fa-brands fa-instagram"></i></a>
               <a href="https://www.facebook.com/LaberintodeBorges/"><i class="fa-brands fa-facebook-f"></i></a>
@@ -238,8 +241,8 @@
             
             
         </div>
-  
-        <div class="col-lg-6 col-md-12 col-sm-12 contact-right" id="contact">
+        
+        <div class="col-lg-6 col-md-12 col-sm-12 contact-right">
             
             
             <div class="col-xs-12 col-sm-6 col-md-8 form">
@@ -283,15 +286,23 @@
                     </div>
                 </form>
             </div>
-            
-            
-            
-        </div>			
+        </div>
+                
       </div>
-      <p class="derechos" >Laberinto de Borges © Copyright 2017. All Rights Reserved.</p>
+      <hr>
+      <div class="rigths-container">
+        <img class="logo-footer" src="../media/logo3.png" alt="logo">
+        <p class="derechos" >Laberinto de Borges © Copyright 2017. All Rights Reserved.</p>
+      </div>
+      
     </footer>
   
-
+    <script async>
+      var loader = document.getElementById('preloader');
+      window.addEventListener('load', function () {
+      loader.style.display = 'none';
+      })
+    </script>
     <script src="./js/header-scroll.js"></script>
 	<script src="./js/burguer.js"></script>
 	<!-- Bootstrap -->

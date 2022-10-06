@@ -37,6 +37,7 @@
 </head>
 
 <body>
+	<div id="preloader"></div>
 	<!--Inicio pop-up-->
 	<a href="https://wa.me/5492604638780?text=Hola,%20queria%20hacer%20una%20consulta"><img src="./media/wap.png" class="wap" alt="whatsapp"></a>
 	<!--Fin pop-up-->
@@ -48,7 +49,6 @@
 		</div>
 		<ul class="menu">
 			<li><a class="menu-a"  href="./index.html">HOME</a> </li>
-			<li><a class="menu-a"  href="./pages/historia.html">EL LABERINTO</a></li>
 			<li><a class="menu-a"  href="./pages/historia.html">HISTORIA</a></li>
 			<li><a class="menu-a"  href="#espacios">ESPACIOS</a></li>
 			<li><a class="menu-a"  href="#agenda">AGENDA</a></li>
@@ -368,106 +368,111 @@
 
 	<footer>
 		<div class="contenedor-footer-info">
-			<div class="col-lg-6 col-md-12 col-sm-12 contact-left">
-				<div class="ubicacion">
-					<h5>Cómo llegar</h5>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.838042246037!2d-68.240760216129!3d-34.65879289628309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9679a962df774b81%3A0xed3f3c33e9cd786d!2sLaberinto%20de%20Borges!5e0!3m2!1ses!2sar!4v1664254374438!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-				<div class="row info">
-						
-					<ul>
-						<li>
-							<div>
-								<i class="fa fa-map-marker"></i>
-								<p>Calle Bombal s/n. Cuadro Nacional, San Rafael - Mendoza</p>
-							</div>
-						</li>
-						<li>
-							<div>
-								<i class="fa fa-phone"></i>
-								<p>+54 9 260 463-8780</p>
-							</div>
-						</li>
-						<li>
-							<div>
-								<i class="fa fa-clock"></i>
-								<p>Abierto todos los días de 10:00 a 19:00</p>
-							</div>
-						</li>
-					</ul>
-				</div>
-				<img class="logo-footer" src="./media/logo3.png" alt="logo">	
-					<!-- <div class="row redes">
-						<a href="https://www.instagram.com/laberintodeborgesok/?hl=es"><i class="fa-brands fa-instagram"></i></a>
-						<a href="https://www.facebook.com/LaberintodeBorges/"><i class="fa-brands fa-facebook-f"></i></a>
-						<a href="https://www.tripadvisor.co/Attraction_Review-g312782-d9884623-Reviews-Laberinto_de_Borges-San_Rafael_Province_of_Mendoza_Cuyo.html"><img src="./media/tripadvisorbanner.png" alt=""></a>
-					</div>
-					
-					<div class="contenedor-footer-menu">
-						<div class="col-lg-6 col-md-12 col-sm-12 menu">
-							<ul>
-								<li><a href="">HOME</a> </li>
-								<li><a href="">EL LABERINTO</a></li>
-								<li><a href="">ESPACIOS</a></li>
-								<li><a href="">AGENDA</a></li>
-							</ul>
-						</div>
-					</div> -->
-					
-					
+		  <div class="col-lg-6 col-md-12 col-sm-12 contact-left">
+			
+			<div class="ubicacion">
+			  <h5>Cómo llegar</h5>
+			  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.838042246037!2d-68.240760216129!3d-34.65879289628309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9679a962df774b81%3A0xed3f3c33e9cd786d!2sLaberinto%20de%20Borges!5e0!3m2!1ses!2sar!4v1664254374438!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
-
-			<div class="col-lg-6 col-md-12 col-sm-12 contact-right" id="contact">
-					
-					
-					<div class="col-xs-12 col-sm-6 col-md-8 form">
-						<h5>Contactenos</h5>
-							<form action="#" id="consulta" method="post">
-									<div class="row">
-										<div class="col-sm-12 col-md-6">
-											<div class="form-group">
-												<input type="text" name="nombre" id="nombre" class="form-control"
-													placeholder="Nombre" />
-											</div>
-										</div>
-										<div class="col-sm-12 col-md-6">
-											<div class="form-group">
-												<input type="text" name="apellido" id="apellido" class="form-control"
-													placeholder="Apellido" />
-											</div>
-										</div>
-									</div>
-									<div class="form-group">
-										<input type="text" name="email" id="email" class="form-control"
-											placeholder="Email" />
-									</div>
-											<div class="form-group">
-										<input type="text" name="asunto" id="asunto" class="form-control"
-											placeholder="Asunto" />
-									</div>
-									<div class="form-group">
-										<textarea class="form-control" id="consulta" rows="6" cols="20"
-											placeholder="Escribe tu consulta"></textarea>
-									</div>
-									<input type="submit" class="btn btn-contact" name="submit" value="Enviar" />
-									<div class="loading" style="display: none">
-										<i class="fa fa-circle-o-notch"> </i> Estamos enviando su
-										consulta. Aguarde.
-									</div>
-									<div class="done" style="display: none">
-										<b> Gracias ! </b>
-										, hemos recibido su consulta correctamente, en breve le
-										respoderemos.
-									</div>
-							</form>
-					</div>
-					
-					
-					
-			</div>			
+			<hr>
+			<div class="row info">
+				
+			  <ul>
+				<li>
+				  <div>
+					<i class="fa fa-map-marker"></i>
+					<p>Calle Bombal s/n. Cuadro Nacional, San Rafael - Mendoza</p>
+				  </div>
+				</li>
+				<li>
+				  <div>
+					<i class="fa fa-phone"></i>
+					<p>+54 9 260 463-8780</p>
+				  </div>
+				</li>
+				<li>
+				  <div>
+					<i class="fa fa-clock"></i>
+					<p>Abierto todos los días de 10:00 a 19:00</p>
+				  </div>
+				</li>
+			  </ul>
+			</div>
+			<hr>  
+			  <!-- <div class="row redes">
+				<a href="https://www.instagram.com/laberintodeborgesok/?hl=es"><i class="fa-brands fa-instagram"></i></a>
+				<a href="https://www.facebook.com/LaberintodeBorges/"><i class="fa-brands fa-facebook-f"></i></a>
+				<a href="https://www.tripadvisor.co/Attraction_Review-g312782-d9884623-Reviews-Laberinto_de_Borges-San_Rafael_Province_of_Mendoza_Cuyo.html"><img src="./media/tripadvisorbanner.png" alt=""></a>
+			  </div>
+			  
+			  <div class="contenedor-footer-menu">
+				<div class="col-lg-6 col-md-12 col-sm-12 menu">
+				  <ul>
+					<li><a href="">HOME</a> </li>
+					<li><a href="">EL LABERINTO</a></li>
+					<li><a href="">ESPACIOS</a></li>
+					<li><a href="">AGENDA</a></li>
+				  </ul>
+				</div>
+			  </div> -->
+			  
+			  
+		  </div>
+		  
+		  <div class="col-lg-6 col-md-12 col-sm-12 contact-right" id="contact">
+			  
+			  
+			  <div class="col-xs-12 col-sm-6 col-md-8 form">
+				<h5>Contactenos</h5>
+				  <form action="#" id="consulta" method="post">
+					  <div class="row">
+						<div class="col-sm-12 col-md-6">
+						  <div class="form-group">
+							<input type="text" name="nombre" id="nombre" class="form-control"
+							  placeholder="Nombre" />
+						  </div>
+						</div>
+						<div class="col-sm-12 col-md-6">
+						  <div class="form-group">
+							<input type="text" name="apellido" id="apellido" class="form-control"
+							  placeholder="Apellido" />
+						  </div>
+						</div>
+					  </div>
+					  <div class="form-group">
+						<input type="text" name="email" id="email" class="form-control"
+						  placeholder="Email" />
+					  </div>
+						  <div class="form-group">
+						<input type="text" name="asunto" id="asunto" class="form-control"
+						  placeholder="Asunto" />
+					  </div>
+					  <div class="form-group">
+						<textarea class="form-control" id="consulta" rows="6" cols="20"
+						  placeholder="Escribe tu consulta"></textarea>
+					  </div>
+					  <input type="submit" class="btn btn-contact" name="submit" value="Enviar" />
+					  <div class="loading" style="display: none">
+						<i class="fa fa-circle-o-notch"> </i> Estamos enviando su
+						consulta. Aguarde.
+					  </div>
+					  <div class="done" style="display: none">
+						<b> Gracias ! </b>
+						, hemos recibido su consulta correctamente, en breve le
+						respoderemos.
+					  </div>
+				  </form>
+			  </div>
+		  </div>
+				  
 		</div>
-		<p class="derechos" >Laberinto de Borges © Copyright 2017. All Rights Reserved.</p>
-	</footer>
+		<hr>
+		<div class="rigths-container">
+		  <img class="logo-footer" src="../media/logo3.png" alt="logo">
+		  <p class="derechos" >Laberinto de Borges © Copyright 2017. All Rights Reserved.</p>
+		</div>
+		
+	  </footer>
 
 
 
@@ -475,6 +480,12 @@
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P8CT3NP" height="0" width="0"
 			style="display: none; visibility: hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
+	<script async>
+		var loader = document.getElementById('preloader');
+		window.addEventListener('load', function () {
+		loader.style.display = 'none';
+		})
+	</script>
 	<script src="./js/header-scroll.js"></script>
 	<script src="./js/burguer.js"></script>
 	<!-- Bootstrap -->

@@ -482,6 +482,10 @@ footer {
   margin-left: -50px;
 }
 
+.quote {
+  font-style: italic;
+}
+
 .hero_img-div {
   grid-column: 3/4;
   grid-row: 1/3;
@@ -564,7 +568,7 @@ footer {
     grid-row: 1;
   }
   .about_title {
-    transform: translate(45%, 13%);
+    transform: translate(3%, -23%);
   }
   .about_desc {
     padding-left: 0;
@@ -690,7 +694,7 @@ footer .contenedor-footer-info {
 }
 @media (max-width: 992px) {
   footer .contenedor-footer-info {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 footer .contenedor-footer-info .contact-left {
@@ -703,6 +707,7 @@ footer .contenedor-footer-info .contact-left {
 @media (max-width: 992px) {
   footer .contenedor-footer-info .contact-left {
     width: 100%;
+    padding: 15% 5%;
   }
 }
 footer .contenedor-footer-info .ubicacion iframe {
@@ -711,7 +716,12 @@ footer .contenedor-footer-info .ubicacion iframe {
 }
 footer .contenedor-footer-info .ubicacion h5 {
   margin-bottom: 3%;
-  font-size: xxx-large;
+  font-size: xx-large;
+}
+@media (max-width: 992px) {
+  footer .contenedor-footer-info .ubicacion h5 {
+    font-size: xxx-large;
+  }
 }
 footer .contenedor-footer-info .info {
   height: 20%;
@@ -724,20 +734,6 @@ footer .contenedor-footer-info .info {
     width: 100%;
   }
 }
-footer .contenedor-footer-info .info .logo-footer {
-  width: 67%;
-  margin-bottom: 13%;
-}
-@media (max-width: 992px) {
-  footer .contenedor-footer-info .info .logo-footer {
-    width: 40%;
-  }
-}
-@media (max-width: 480px) {
-  footer .contenedor-footer-info .info .logo-footer {
-    width: 54%;
-  }
-}
 footer .contenedor-footer-info .info ul {
   display: flex;
   flex-direction: column;
@@ -748,12 +744,7 @@ footer .contenedor-footer-info .info ul {
 }
 @media (max-width: 560px) {
   footer .contenedor-footer-info .info ul {
-    width: 64%;
-  }
-}
-@media (min-width: 561px) and (max-width: 993px) {
-  footer .contenedor-footer-info .info ul {
-    width: 38%;
+    width: 100%;
   }
 }
 footer .contenedor-footer-info .info ul li div {
@@ -772,8 +763,7 @@ footer .contenedor-footer-info .info ul li div p {
   display: block;
   font-size: 1rem;
   font-weight: 300;
-  margin-bottom: 0;
-  margin-top: 15px;
+  margin: 7px 0;
 }
 footer .contenedor-footer-info .redes {
   display: flex;
@@ -897,15 +887,29 @@ footer .contact-right .form .btn-contact:hover {
   background: var(--highlight-color2);
 }
 
+.logo-footer {
+  width: 20%;
+}
+@media (max-width: 992px) {
+  .logo-footer {
+    width: 50%;
+  }
+}
+
+.rigths-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .derechos {
   padding: 23px 0;
-  margin-bottom: 0rem;
   text-align: center;
   font-size: small;
 }
 @media (max-width: 992px) {
   .derechos {
-    padding: 0;
+    padding: 1rem;
     font-size: small;
   }
 }
@@ -938,7 +942,6 @@ footer .contact-right .form .btn-contact:hover {
 .carousel-inner .carousel-item .carousel-caption {
   position: relative;
   height: 85%;
-  width: 75vw;
   left: 0%;
   bottom: 70%;
   padding: 0% 15%;
@@ -1022,4 +1025,13 @@ footer .contact-right .form .btn-contact:hover {
 
 .agenda {
   padding-top: 5vh;
+}
+
+#preloader {
+  background: black url("../../media/giflaberinto.gif") no-repeat center center;
+  background-size: 50%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
 }/*# sourceMappingURL=style.css.map */
