@@ -1,6 +1,18 @@
 
 .espacios{
     // background-color: #0d0204;
+    &::before {
+        content: "";
+        width: 600px;
+        height: 900px;
+        background-image: url("../../media/bg-figuras/bg-tablet-pattern.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+        transform: rotate(180deg);
+        bottom: -1200px;
+        left: -250px;
+        z-index: -1;
+      }
     .contenedor-espacios{
         display: flex;
         --bs-gutter-x: none;
@@ -58,7 +70,6 @@
                 font-size: 3rem;
             }
             @media screen and (max-width: 992px) {
-                align-items: center;
                 #fontTitulo{
                     font-size: x-large;
                 }

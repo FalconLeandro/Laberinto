@@ -18,17 +18,11 @@ function lineaAnimada(){
 }
 /*FIN Logica para crear la cruz del menu burguer*/
 
-// function navMovimiento(){
-    
-//     linea1.classList.toggle("linea1active");
-//     linea2.classList.toggle("linea2active");
-//     linea3.classList.toggle("linea3active");
-//     menu.classList.toggle("appear");
-// }
-
 const links = document.querySelectorAll(".menu-a");
 function doit() {
-  
+    linea1.classList.toggle("linea1active");
+    linea2.classList.toggle("linea2active");
+    linea3.classList.toggle("linea3active");
     document.body.classList.toggle("scroll-none");
 }
 links.forEach(cbox =>{cbox.addEventListener("click", doit);})

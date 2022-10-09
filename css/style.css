@@ -609,6 +609,18 @@ footer {
     display: none;
   }
 }
+.espacios::before {
+  content: "";
+  width: 600px;
+  height: 900px;
+  background-image: url("../../media/bg-figuras/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  transform: rotate(180deg);
+  bottom: -1200px;
+  left: -250px;
+  z-index: -1;
+}
 .espacios .contenedor-espacios {
   display: flex;
   --bs-gutter-x: none;
@@ -670,9 +682,6 @@ footer {
   font-size: 3rem;
 }
 @media screen and (max-width: 992px) {
-  .espacios .contenedor-espacios .espacios-descripcion {
-    align-items: center;
-  }
   .espacios .contenedor-espacios .espacios-descripcion #fontTitulo {
     font-size: x-large;
   }
@@ -868,6 +877,7 @@ footer .contact-right .form .form-control {
 }
 footer .contact-right .form .form-control:focus {
   border: 2px solid var(--highlight-color2) !important;
+  box-shadow: none;
 }
 footer .contact-right .form textarea {
   height: 150px;
@@ -952,9 +962,9 @@ footer .contact-right .form .btn-contact:hover {
   position: absolute;
   font-weight: 600;
   width: initial;
-  bottom: 15vh;
-  left: 0vw;
-  font-size: 4rem;
+  bottom: 12vh;
+  left: 8vw;
+  font-size: 3rem;
   margin-bottom: 0;
 }
 .carousel-inner .carousel-item .carousel-caption p {
