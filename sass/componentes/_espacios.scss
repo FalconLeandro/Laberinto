@@ -3,14 +3,14 @@
     // background-color: #0d0204;
     &::before {
         content: "";
-        width: 600px;
+        width: 841px;
         height: 900px;
-        background-image: url("../../media/bg-figuras/bg-tablet-pattern.svg");
+        background-image: url(../../media/bg-figuras/bg-tablet-pattern.svg);
         background-repeat: no-repeat;
         position: absolute;
         transform: rotate(180deg);
-        bottom: -1200px;
-        left: -250px;
+        bottom: 2438px;
+        left: 228px;
         z-index: -1;
       }
     .contenedor-espacios{
