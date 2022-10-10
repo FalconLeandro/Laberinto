@@ -5,6 +5,7 @@
     }
     .carousel-item{
         height: inherit;
+        transition: opacity .6s ease-in-out ;
         .shadow-layer{
             z-index: 0;
         }
@@ -24,13 +25,13 @@
             bottom: 70%;
             padding: 0% 15%;
             text-align: inherit;
-            background-image: linear-gradient(10deg, var(--background-color), var(--background-color), var(--background-color), transparent, transparent, var(--background-color), var(--background-color));
+            background-image: linear-gradient(10deg, var(--background-color), var(--background-color), transparent, transparent, var(--background-color), var(--background-color));
         
             h5{ position: absolute;
                 font-weight: 600;
                 width: initial;
                 bottom: 12vh;
-                left: 8vw;
+                left: 1vw;
                 font-size: 3rem;
                 margin-bottom: 0;
             }
@@ -87,6 +88,7 @@
     width: 93%;
     height: 30px;
     top: 75%;
+    
     @media screen and (max-width: 772px) { //mobile 
         width: 65vw;
     }
@@ -97,7 +99,7 @@
         height: 3rem;
         border-radius: 50%;
         &:hover{
-            transform: scale(1.1rem);
+            color: #F1A208;
         }
     }
     .carousel-control-prev{

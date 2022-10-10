@@ -125,6 +125,9 @@ section:not(:first-child) {
             font-size: 1em;
             color: #D0CCB3;
             margin: 0% 5px;
+            &:hover{
+                color: #F1A208;
+            }
         }
 
         img {
@@ -178,7 +181,6 @@ section:not(:first-child) {
             right: 2.5rem;
             top: 1.5rem;
             cursor: pointer;
-
 
             span {
                 display: block; //lo convierto en bloque

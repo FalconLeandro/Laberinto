@@ -241,6 +241,9 @@ section:not(:first-child) {
   color: #D0CCB3;
   margin: 0% 5px;
 }
+.menu-nav .social a i:hover {
+  color: #F1A208;
+}
 .menu-nav .social img {
   height: 1.5rem;
   margin-top: -6%;
@@ -978,6 +981,7 @@ footer .contact-right .form .btn-contact:hover {
 }
 .carousel-inner .carousel-item {
   height: inherit;
+  transition: opacity 0.6s ease-in-out;
 }
 .carousel-inner .carousel-item .shadow-layer {
   z-index: 0;
@@ -996,14 +1000,14 @@ footer .contact-right .form .btn-contact:hover {
   bottom: 70%;
   padding: 0% 15%;
   text-align: inherit;
-  background-image: linear-gradient(10deg, var(--background-color), var(--background-color), var(--background-color), transparent, transparent, var(--background-color), var(--background-color));
+  background-image: linear-gradient(10deg, var(--background-color), var(--background-color), transparent, transparent, var(--background-color), var(--background-color));
 }
 .carousel-inner .carousel-item .carousel-caption h5 {
   position: absolute;
   font-weight: 600;
   width: initial;
   bottom: 12vh;
-  left: 8vw;
+  left: 1vw;
   font-size: 3rem;
   margin-bottom: 0;
 }
@@ -1076,7 +1080,7 @@ footer .contact-right .form .btn-contact:hover {
   border-radius: 50%;
 }
 .carousel-control-prev .carousel-control-prev-icon:hover, .carousel-control-prev .carousel-control-next-icon:hover, .carousel-control-next .carousel-control-prev-icon:hover, .carousel-control-next .carousel-control-next-icon:hover {
-  transform: scale(1.1rem);
+  color: #F1A208;
 }
 .carousel-control-prev .carousel-control-prev, .carousel-control-next .carousel-control-prev {
   left: 20px;
