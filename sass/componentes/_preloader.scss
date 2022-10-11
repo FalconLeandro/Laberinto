@@ -5,4 +5,7 @@
     width: 100%;
     position: fixed;
     z-index: 100;
+    @media all and (max-width: 980px) {
+        background-size: 100%;
+    }
 }

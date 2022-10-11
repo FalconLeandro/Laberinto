@@ -60,6 +60,12 @@ body::before {
 .wap:hover {
   transform: scale(1.1);
 }
+@media all and (max-width: 980px) {
+  .wap {
+    height: 3rem;
+    width: 3rem;
+  }
+}
 
 .banner {
   padding: 5% 8%;
@@ -995,7 +1001,7 @@ footer .contact-right .form .btn-contact:hover {
 }
 .carousel-inner .carousel-item .carousel-caption {
   position: relative;
-  height: 85%;
+  height: 70%;
   left: 0%;
   bottom: 70%;
   padding: 0% 15%;
@@ -1023,7 +1029,7 @@ footer .contact-right .form .btn-contact:hover {
     padding: 1rem 7rem;
   }
   .carousel-inner .carousel-item .carousel-caption h5 {
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
   .carousel-inner .carousel-item .carousel-caption p {
     font-size: 0.9rem;
@@ -1100,4 +1106,9 @@ footer .contact-right .form .btn-contact:hover {
   width: 100%;
   position: fixed;
   z-index: 100;
+}
+@media all and (max-width: 980px) {
+  #preloader {
+    background-size: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
