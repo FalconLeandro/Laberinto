@@ -12,6 +12,9 @@
         bottom: 2438px;
         left: 228px;
         z-index: -1;
+        @media screen and (max-width: 992px) {
+            left: -531px;
+        }
       }
     .contenedor-espacios{
         display: flex;
