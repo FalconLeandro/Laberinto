@@ -88,16 +88,14 @@
     width: 93%;
     height: 30px;
     top: 75%;
-    
+    transition: opacity 0.5s ease!important;
     @media screen and (max-width: 772px) { //mobile 
         width: 65vw;
     }
     .carousel-control-prev-icon,.carousel-control-next-icon{
-        border:transparent solid 3px;
         font-size: 2rem;
         width: 3rem;
         height: 3rem;
-        border-radius: 50%;
         &:hover{
             color: #F1A208;
         }

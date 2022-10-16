@@ -1,12 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Merriweather+Sans:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Source+Sans+Pro:ital,wght@0,300;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
-@font-face {
-  font-family: "Open Sans";
-  src: url("/media/GARAIT.TTF") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
 * {
   margin: 0;
   padding: 0;
@@ -74,11 +66,6 @@ main {
     min-height: unset;
     padding: 0 10px;
   }
-}
-
-section:not(:first-child) {
-  content-visability: auto;
-  contain-intrinsic-size: 1000px;
 }
 
 .sr-only {
@@ -244,7 +231,7 @@ header .images .title h1 {
   font-size: 6rem !important;
 }
 header .images .scaling {
-  background-image: url("../media/historia/laberinto-historia (1).jpg");
+  background-image: url("../media/historia/laberinto-historia (1).webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

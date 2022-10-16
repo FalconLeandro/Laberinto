@@ -1,19 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Source+Sans+Pro:ital,wght@0,300;1,300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Merriweather+Sans:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Source+Sans+Pro:ital,wght@0,300;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
-@font-face {
-  font-family: titulos;
-  src: url(../../tipografias/TrajanPro-Regular.otf);
-}
-@font-face {
-  font-family: body;
-  src: url(../../tipografias/GARA.TTF);
-}
-@font-face {
-  font-family: frases;
-  src: url(../../tipografias/Austhina\ Brush\ Calligraphy\ Scratch\ .ttf);
-}
 * {
   margin: 0;
   padding: 0;
@@ -134,12 +120,6 @@ body::before {
   }
 }
 
-@font-face {
-  font-family: "Open Sans";
-  src: url("/media/GARAIT.TTF") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
 body {
   --highlight-color4: #a03b43;
   --highlight-color3: #f12e08;
@@ -148,10 +128,10 @@ body {
   --text-color: white;
   --background-color: #1e1f26;
   --stripe-pattern: repeating-linear-gradient(45deg,
-          var(--highlight-color) 0px,
-          var(--highlight-color) 40px,
-          var(--background-color) 40px,
-          var(--background-color) 80px);
+          var(--highlight-color2) 0px,
+          var(--highlight-color2) 40px,
+          var(--background-color2) 40px,
+          var(--background-color2) 80px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -191,11 +171,6 @@ footer {
   }
 }
 
-section:not(:first-child) {
-  content-visability: auto;
-  contain-intrinsic-size: 1000px;
-}
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -224,7 +199,7 @@ section:not(:first-child) {
   width: 100%;
   position: fixed;
   z-index: 100;
-  height: 70px;
+  height: 60px;
   transition: 0.7s ease-out;
   background-image: linear-gradient(180deg, var(--background-color), var(--background-color), transparent);
 }
@@ -233,12 +208,18 @@ section:not(:first-child) {
 }
 .menu-nav.scroll-up {
   transform: none;
-  height: 90px;
+  height: 75px;
   background: rgba(13, 2, 4, 0.8);
 }
 .menu-nav .social {
-  left: 3%;
   position: absolute;
+  left: 1rem;
+}
+@media all and (max-width: 980px) {
+  .menu-nav .social {
+    position: unset;
+    margin-left: 1rem;
+  }
 }
 .menu-nav .social a i {
   font-size: 1em;
@@ -251,6 +232,7 @@ section:not(:first-child) {
 .menu-nav .social img {
   height: 1.5rem;
   margin-top: -6%;
+  margin-left: 0.5rem;
 }
 .menu-nav ul {
   display: flex;
@@ -281,11 +263,9 @@ section:not(:first-child) {
 }
 .menu-nav label .btn {
   display: none;
-  position: absolute;
   width: 55px;
-  height: 55px;
-  right: 2.5rem;
-  top: 1.5rem;
+  height: 44px;
+  margin-right: 0.5rem;
   cursor: pointer;
   /*fin boton burguer*/
 }
@@ -294,7 +274,6 @@ section:not(:first-child) {
   width: 100%;
   height: 2px;
   background: #D0CCB3;
-  margin-top: 6px;
   transition: all 300ms;
   transform-origin: 0px 100%;
   /*transformacion de la cruz*/
@@ -359,7 +338,7 @@ header .images .title h1 {
   font-size: 6rem !important;
 }
 header .images .scaling {
-  background-image: url("../media/Aereas4.jpg");
+  background-image: url("../media/Aereas4.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -396,6 +375,9 @@ footer {
   }
 }
 @media all and (max-width: 980px) {
+  nav {
+    justify-content: space-between !important;
+  }
   nav ul {
     display: flex;
     padding: 28% 0%;
@@ -407,7 +389,6 @@ footer {
     width: 100%;
     height: 100vh;
     background-color: var(--background-color);
-    z-index: 98;
     left: 100%;
     transition: all 0.5s;
   }
@@ -426,10 +407,9 @@ footer {
     background: #D3E4CD;
   }
   nav label .btn {
-    display: block !important;
-    right: 1.5rem;
-    top: 1.3rem;
-    z-index: 99;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
   .scroll-none {
     overflow-y: hidden;
@@ -439,7 +419,7 @@ footer {
   }
 }
 .intro {
-  background-image: url("../../media/fondo.png");
+  background-image: url("../../media/fondo.webp");
   background-size: contain;
   width: 100%;
   height: 100%;
@@ -715,7 +695,7 @@ footer {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding: 7%;
+  padding: 7% 0;
 }
 .espacios .contenedor-espacios .espacios-descripcion #fontTitulo {
   font-weight: 600;
@@ -1075,6 +1055,7 @@ footer .contact-right .form .btn-contact:hover {
   width: 93%;
   height: 30px;
   top: 75%;
+  transition: opacity 0.5s ease !important;
 }
 @media screen and (max-width: 772px) {
   .carousel-control-prev, .carousel-control-next {
@@ -1082,11 +1063,9 @@ footer .contact-right .form .btn-contact:hover {
   }
 }
 .carousel-control-prev .carousel-control-prev-icon, .carousel-control-prev .carousel-control-next-icon, .carousel-control-next .carousel-control-prev-icon, .carousel-control-next .carousel-control-next-icon {
-  border: transparent solid 3px;
   font-size: 2rem;
   width: 3rem;
   height: 3rem;
-  border-radius: 50%;
 }
 .carousel-control-prev .carousel-control-prev-icon:hover, .carousel-control-prev .carousel-control-next-icon:hover, .carousel-control-next .carousel-control-prev-icon:hover, .carousel-control-next .carousel-control-next-icon:hover {
   color: #F1A208;
