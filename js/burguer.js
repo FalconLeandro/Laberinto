@@ -9,7 +9,7 @@ burguer.addEventListener("click", lineaAnimada);
 // menu.addEventListener("click", navMovimiento);
 
 
-function lineaAnimada(){
+function lineaAnimada() {
 
     linea1.classList.toggle("linea1active");
     linea2.classList.toggle("linea2active");
@@ -25,4 +25,4 @@ function doit() {
     linea3.classList.toggle("linea3active");
     document.body.classList.toggle("scroll-none");
 }
-links.forEach(cbox =>{cbox.addEventListener("click", doit);})
+links.forEach(cbox => { cbox.addEventListener("click", doit); })

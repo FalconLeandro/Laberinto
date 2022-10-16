@@ -1,13 +1,15 @@
-.fa-whatsapp{
+.fa-whatsapp {
     position: fixed;
     font-size: 4rem;
     color: white;
     bottom: 1rem;
     right: 1.1rem;
     z-index: 100;
-    &:hover{
-        color:  var(--highlight-color1);
+
+    &:hover {
+        color: var(--highlight-color1);
     }
+
     @media all and (max-width: 980px) {
         font-size: 3rem;
     }

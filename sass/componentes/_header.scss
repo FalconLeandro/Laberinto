@@ -88,6 +88,7 @@ footer {
     height: 60px;
     transition: .7s ease-out;
     background-image: linear-gradient(180deg, var(--background-color), var(--background-color), transparent);
+
     &.scroll-down {
         transform: translate3d(0, -100%, 0)
     }
@@ -102,15 +103,18 @@ footer {
     .social {
         position: absolute;
         left: 1rem;
+
         @media all and (max-width: 980px) {
             position: unset;
             margin-left: 1rem;
         }
+
         a i {
             font-size: 1em;
             color: #D0CCB3;
             margin: 0% 5px;
-            &:hover{
+
+            &:hover {
                 color: #F1A208;
             }
         }
@@ -322,7 +326,7 @@ header {
 @media all and (max-width: 980px) {
 
     nav {
-        justify-content: space-between!important;
+        justify-content: space-between !important;
 
         ul {
             display: flex;
@@ -351,32 +355,31 @@ header {
                     }
                 }
             }
-            
+
         }
-        
-        
+
+
         #menu-burguer:checked~label .btn span {
             background: #D3E4CD;
         }
 
         label .btn {
-            display: flex!important;
+            display: flex !important;
             flex-direction: column;
             justify-content: space-evenly;
         }
 
     }
+
     .scroll-none {
-    
+
         overflow-y: hidden;
-        nav ul{
+
+        nav ul {
             left: 0%;
         }
-        
-        
+
+
     }
 
 }
-
-
-

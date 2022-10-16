@@ -102,7 +102,7 @@ body::before {
 @media (max-width: 769px) {
   .banner .logo {
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
   }
 }
 .banner .logo img {
@@ -455,7 +455,8 @@ footer {
   text-transform: uppercase;
   display: inline-block;
   font-size: 16px;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
   margin-top: 40px;
@@ -522,8 +523,8 @@ footer {
 }
 
 /*
-# ABOUT
-*/
+  # ABOUT
+  */
 .about_grid {
   grid-template-columns: 1fr 2fr;
 }
@@ -551,7 +552,9 @@ footer {
   }
 }
 @media (max-width: 975px) {
-  .logo_div, nav, .copyright {
+  .logo_div,
+nav,
+.copyright {
     margin: auto;
   }
   .about_desc {
@@ -573,7 +576,8 @@ footer {
   }
 }
 @media (max-width: 700px) {
-  main, footer {
+  main,
+footer {
     padding: 0 10px;
   }
   .about_grid * {
@@ -695,7 +699,12 @@ footer {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding: 7% 0;
+  padding: 7%;
+}
+@media screen and (max-width: 992px) {
+  .espacios .contenedor-espacios .espacios-descripcion {
+    padding: 7% 0;
+  }
 }
 .espacios .contenedor-espacios .espacios-descripcion #fontTitulo {
   font-weight: 600;
@@ -1050,7 +1059,8 @@ footer .contact-right .form .btn-contact:hover {
   z-index: -1;
 }
 
-.carousel-control-prev, .carousel-control-next {
+.carousel-control-prev,
+.carousel-control-next {
   opacity: inherit;
   width: 93%;
   height: 30px;
@@ -1058,22 +1068,31 @@ footer .contact-right .form .btn-contact:hover {
   transition: opacity 0.5s ease !important;
 }
 @media screen and (max-width: 772px) {
-  .carousel-control-prev, .carousel-control-next {
+  .carousel-control-prev,
+.carousel-control-next {
     width: 65vw;
   }
 }
-.carousel-control-prev .carousel-control-prev-icon, .carousel-control-prev .carousel-control-next-icon, .carousel-control-next .carousel-control-prev-icon, .carousel-control-next .carousel-control-next-icon {
+.carousel-control-prev .carousel-control-prev-icon,
+.carousel-control-prev .carousel-control-next-icon,
+.carousel-control-next .carousel-control-prev-icon,
+.carousel-control-next .carousel-control-next-icon {
   font-size: 2rem;
   width: 3rem;
   height: 3rem;
 }
-.carousel-control-prev .carousel-control-prev-icon:hover, .carousel-control-prev .carousel-control-next-icon:hover, .carousel-control-next .carousel-control-prev-icon:hover, .carousel-control-next .carousel-control-next-icon:hover {
+.carousel-control-prev .carousel-control-prev-icon:hover,
+.carousel-control-prev .carousel-control-next-icon:hover,
+.carousel-control-next .carousel-control-prev-icon:hover,
+.carousel-control-next .carousel-control-next-icon:hover {
   color: #F1A208;
 }
-.carousel-control-prev .carousel-control-prev, .carousel-control-next .carousel-control-prev {
+.carousel-control-prev .carousel-control-prev,
+.carousel-control-next .carousel-control-prev {
   left: 20px;
 }
-.carousel-control-prev .carousel-control-next, .carousel-control-next .carousel-control-next {
+.carousel-control-prev .carousel-control-next,
+.carousel-control-next .carousel-control-next {
   left: 20px;
 }
 
