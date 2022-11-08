@@ -80,12 +80,12 @@ footer {
 
 .menu-nav {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     width: 100%;
     position: fixed;
     z-index: 100;
-    height: 60px;
+    height: 65px;
     transition: .7s ease-out;
     background-image: linear-gradient(180deg, var(--background-color), var(--background-color), transparent);
 
@@ -95,14 +95,14 @@ footer {
 
     &.scroll-up {
         transform: none;
-        height: 75px;
+        height: 50px;
         background: rgba(13, 2, 4, 0.8);
     }
 
 
     .social {
         position: absolute;
-        left: 1rem;
+        left: 8%;
 
         @media all and (max-width: 980px) {
             position: unset;
@@ -127,6 +127,7 @@ footer {
     }
 
     ul {
+        margin-right: 8%;
         display: flex;
         list-style: none;
         font-size: 1em;
@@ -144,10 +145,19 @@ footer {
                 letter-spacing: 1px;
                 transition: all .2s ease-out;
 
-                &:hover {
-                    color: var(--highlight-color2);
-                }
+                background-image: linear-gradient(currentColor, currentColor);
+                background-position: 50% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size .5s;
 
+                
+
+            }
+            a:hover,a:focus {
+                color: var(--highlight-color2);
+                background-size: 100% 2px;
+                
             }
 
         }
@@ -173,6 +183,7 @@ footer {
                 height: 2px;
                 background: #D0CCB3;
                 transition: all 300ms;
+                margin-top: 6px;
                 transform-origin: 0px 100%; // lo mantiene pegado en en el padre
 
                 /*transformacion de la cruz*/

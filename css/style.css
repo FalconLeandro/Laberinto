@@ -194,12 +194,12 @@ footer {
 
 .menu-nav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   width: 100%;
   position: fixed;
   z-index: 100;
-  height: 60px;
+  height: 65px;
   transition: 0.7s ease-out;
   background-image: linear-gradient(180deg, var(--background-color), var(--background-color), transparent);
 }
@@ -208,12 +208,12 @@ footer {
 }
 .menu-nav.scroll-up {
   transform: none;
-  height: 75px;
+  height: 50px;
   background: rgba(13, 2, 4, 0.8);
 }
 .menu-nav .social {
   position: absolute;
-  left: 1rem;
+  left: 8%;
 }
 @media all and (max-width: 980px) {
   .menu-nav .social {
@@ -235,6 +235,7 @@ footer {
   margin-left: 0.5rem;
 }
 .menu-nav ul {
+  margin-right: 8%;
   display: flex;
   list-style: none;
   font-size: 1em;
@@ -251,9 +252,15 @@ footer {
   color: var(--text-color);
   letter-spacing: 1px;
   transition: all 0.2s ease-out;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.5s;
 }
-.menu-nav ul li .menu-a:hover {
+.menu-nav ul li a:hover, .menu-nav ul li a:focus {
   color: var(--highlight-color2);
+  background-size: 100% 2px;
 }
 .menu-nav input {
   display: none;
@@ -275,6 +282,7 @@ footer {
   height: 2px;
   background: #D0CCB3;
   transition: all 300ms;
+  margin-top: 6px;
   transform-origin: 0px 100%;
   /*transformacion de la cruz*/
   /* fin transformacion de la cruz*/
@@ -1100,16 +1108,17 @@ footer .contact-right .form .btn-contact:hover {
   padding-top: 5vh;
 }
 
-#preloader {
-  background: black url("../media/giflaberinto.gif") no-repeat center center;
-  background-size: 50%;
+.preloader {
+  align-items: center;
+  background: #FFF;
+  display: flex;
   height: 100vh;
-  width: 100%;
+  justify-content: center;
+  left: 0;
   position: fixed;
-  z-index: 100;
-}
-@media all and (max-width: 980px) {
-  #preloader {
-    background-size: 100%;
-  }
+  top: 0;
+  transition: opacity 0.2s linear;
+  width: 100%;
+  z-index: 9999;
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */

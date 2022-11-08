@@ -1,12 +1,27 @@
-#preloader {
-    background: black url("../media/giflaberinto.gif") no-repeat center center;
-    background-size: 50%;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
+// .preloader {
+//     background: black url("../media/giflaberinto.gif") no-repeat center center;
+//     background-size: 50%;
+//     height: 100vh;
+//     width: 100%;
+//     position: fixed;
+//     z-index: 100;
 
-    @media all and (max-width: 980px) {
-        background-size: 100%;
-    }
-}
+//     @media all and (max-width: 980px) {
+//         background-size: 100%;
+//     }
+// }
+.preloader {
+    align-items: center;
+    background: #FFF;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transition: opacity 0.2s linear;
+    width: 100%;
+    z-index: 9999;
+    opacity: 1;
+  }
+  
